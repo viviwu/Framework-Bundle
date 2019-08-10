@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pAm-pq-I47">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--XiOS Features TableVC-->
+        <scene sceneID="1s7-le-l6H">
+            <objects>
+                <tableViewController id="rRu-Sy-dsa" customClass="XiOSFeaturesTableVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="DrD-7Y-KMv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mJK-jM-pWt">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJK-jM-pWt" id="cUS-dk-gjS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rRu-Sy-dsa" id="nvv-lB-o8k"/>
+                            <outlet property="delegate" destination="rRu-Sy-dsa" id="lrE-wz-GfU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="UgD-Ek-CK9"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="Y8X-iA-g8O"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yq-l9-PPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.1014492753625" y="80.357142857142847"/>
+        </scene>
+        <!--Useage Table View Controller-->
+        <scene sceneID="Y75-6D-rnk">
+            <objects>
+                <tableViewController id="BjI-3Z-ZVM" customClass="XUseageTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ipz-EV-IT6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="hK0-oX-wTI" detailTextLabel="nFk-O6-Aoh" style="IBUITableViewCellStyleSubtitle" id="Cm7-pW-6lA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cm7-pW-6lA" id="98L-yE-d3n">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hK0-oX-wTI">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nFk-O6-Aoh">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="FPH-in-lMA" kind="show" identifier="reuseIdentifier" id="f2r-7K-jnf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BjI-3Z-ZVM" id="NT0-Sd-hQY"/>
+                            <outlet property="delegate" destination="BjI-3Z-ZVM" id="CRl-zk-KE4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3UJ-bn-PGb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMX-5N-uKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="838"/>
+        </scene>
+        <!--Input View Controller-->
+        <scene sceneID="cDC-dc-ffy">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="FPH-in-lMA" customClass="XInputViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a7u-23-mBL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="keyboard" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tN8-EL-BI5">
+                                <rect key="frame" x="50" y="138" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dkT-Xu-L6y"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="FPH-in-lMA" id="Q5l-t1-nOJ"/>
+                                </connections>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-rB-O7g">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="Yfc-6c-fb4"/>
+                                    <barButtonItem systemItem="action" id="foF-po-Tc1"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="M1v-Yu-4wH"/>
+                                    <barButtonItem systemItem="compose" id="49k-JX-vi6"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="Geo-vh-lxL"/>
+                                    <barButtonItem style="plain" id="zhT-1h-tlL">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nQP-ji-l9o">
+                                            <rect key="frame" x="246" y="0.0" width="92" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                            <state key="normal" title="⌨️"/>
+                                            <connections>
+                                                <action selector="switchKeyboard:" destination="FPH-in-lMA" eventType="touchUpInside" id="8Jt-P9-Cyj"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="DIn-nW-InW"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AjE-IQ-137" firstAttribute="trailing" secondItem="tN8-EL-BI5" secondAttribute="trailing" constant="50" id="EPA-OU-kLS"/>
+                            <constraint firstItem="tN8-EL-BI5" firstAttribute="leading" secondItem="AjE-IQ-137" secondAttribute="leading" constant="50" id="KhJ-Gw-j9A"/>
+                            <constraint firstItem="tN8-EL-BI5" firstAttribute="top" secondItem="AjE-IQ-137" secondAttribute="top" constant="50" id="dil-zK-Ap1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AjE-IQ-137"/>
+                    </view>
+                    <connections>
+                        <outlet property="editToolBar" destination="W3G-rB-O7g" id="seH-E0-g3W"/>
+                        <outlet property="emotionView" destination="b01-4f-IzR" id="pFt-im-sWh"/>
+                        <outlet property="textField" destination="tN8-EL-BI5" id="4r8-fd-iGQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9Z-0h-avg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="b01-4f-IzR">
+                    <rect key="frame" x="0.0" y="0.0" width="434" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KrG-Lk-HrF">
+                            <rect key="frame" x="0.0" y="0.0" width="434" height="200"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AWt-05-26K">
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="36"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga5-ZT-oiv">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="mce-of-3pP"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVu-ET-KQt">
+                                            <rect key="frame" x="49" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="VMj-jT-EmD"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgl-tc-9fP">
+                                            <rect key="frame" x="97.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="phq-vI-6EO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZB-rT-kMf">
+                                            <rect key="frame" x="146.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="1Gq-KY-Lm6"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noj-At-eoy">
+                                            <rect key="frame" x="195" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="2cf-BH-izQ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSl-dV-hyn">
+                                            <rect key="frame" x="244" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="mvy-bV-giz"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKy-wI-GMT">
+                                            <rect key="frame" x="292.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="o0Z-dB-Gca"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-Ta-bMi">
+                                            <rect key="frame" x="341.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="LVc-Dr-mK0"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hr-Yh-av9">
+                                            <rect key="frame" x="390" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="5fR-re-TBJ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oqy-H0-NFj">
+                                    <rect key="frame" x="0.0" y="41" width="434" height="36"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4X-aV-K5A">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="kvR-dj-ilT"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ouq-hR-rzM">
+                                            <rect key="frame" x="49" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="MG7-J0-14x"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jm-HQ-knO">
+                                            <rect key="frame" x="97.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="uEy-iG-VkF"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfd-X5-JIF">
+                                            <rect key="frame" x="146.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="DAS-aM-q18"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d2-Gl-0va">
+                                            <rect key="frame" x="195" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="v9k-Rk-MHN"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgf-lT-W7D">
+                                            <rect key="frame" x="244" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="0YD-nH-cMQ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCI-eI-m3f">
+                                            <rect key="frame" x="292.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="KUy-h6-UIj"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqs-cd-9m3">
+                                            <rect key="frame" x="341.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="GEN-Vk-JPb"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mf-Wg-iov">
+                                            <rect key="frame" x="390" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="AE5-Dz-hJ9"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OSL-gD-Lm4">
+                                    <rect key="frame" x="0.0" y="82" width="434" height="36"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us6-DV-kCS">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="ftz-Lr-lWI"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1c-fO-4ap">
+                                            <rect key="frame" x="49" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="8uY-Sg-W7I"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wX-cN-Jye">
+                                            <rect key="frame" x="97.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="Cl8-yl-gKA"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I7-Ig-uct">
+                                            <rect key="frame" x="146.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="Tc7-NX-fi9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmI-cz-Yfl">
+                                            <rect key="frame" x="195" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="Vam-Px-HlE"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAL-XX-Mcu">
+                                            <rect key="frame" x="244" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="ajB-yb-Yrf"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5W-n8-DqF">
+                                            <rect key="frame" x="292.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="IW3-1D-j6A"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfR-ol-vEm">
+                                            <rect key="frame" x="341.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="spu-Pi-zyN"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upG-U5-UTg">
+                                            <rect key="frame" x="390" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="lsw-K9-lPY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xR7-UD-C0k">
+                                    <rect key="frame" x="0.0" y="123" width="434" height="36"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e4-DV-KpJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="ZXt-nJ-NZA"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="joF-GX-eNe">
+                                            <rect key="frame" x="49" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="Snn-sc-0k4"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rno-GX-Bhi">
+                                            <rect key="frame" x="97.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="9Gh-Ad-yTF"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF8-QQ-aux">
+                                            <rect key="frame" x="146.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="EWv-gQ-dDb"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bE-LC-KWQ">
+                                            <rect key="frame" x="195" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="fan-aX-mwS"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gj-TA-RlP">
+                                            <rect key="frame" x="244" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="21I-6x-q7j"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWE-44-p56">
+                                            <rect key="frame" x="292.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="XWm-Ah-NPC"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdH-In-t1W">
+                                            <rect key="frame" x="341.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="n0Y-UH-u1Y"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yg-BL-dfG">
+                                            <rect key="frame" x="390" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="FTc-mb-sdS"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m9J-Pi-uz3">
+                                    <rect key="frame" x="0.0" y="164" width="434" height="36"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf3-vD-y1Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="T7Y-iq-FuW"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO9-wa-Kfo">
+                                            <rect key="frame" x="49" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="QDJ-JP-nHe"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56i-bp-fpk">
+                                            <rect key="frame" x="97.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="QKY-WJ-oE4"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfA-ff-fJt">
+                                            <rect key="frame" x="146.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="mmB-Hu-ETk"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duy-ED-UCi">
+                                            <rect key="frame" x="195" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="VV4-yH-ojt"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5f-Vf-NPj">
+                                            <rect key="frame" x="244" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="xHy-co-LIa"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfG-zH-wc6">
+                                            <rect key="frame" x="292.5" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="guZ-d1-zTp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFV-WO-8K7">
+                                            <rect key="frame" x="341.5" y="0.0" width="43.5" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="DEf-dC-Qbp"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQa-Em-DCN">
+                                            <rect key="frame" x="390" y="0.0" width="44" height="36"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <state key="normal" title="😊"/>
+                                            <connections>
+                                                <action selector="emotionChanged:" destination="FPH-in-lMA" eventType="touchUpInside" id="ye9-Ag-NCP"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="KrG-Lk-HrF" firstAttribute="top" secondItem="b01-4f-IzR" secondAttribute="top" id="7Da-3h-ukH"/>
+                        <constraint firstAttribute="bottom" secondItem="KrG-Lk-HrF" secondAttribute="bottom" id="AMf-6q-vic"/>
+                        <constraint firstItem="KrG-Lk-HrF" firstAttribute="leading" secondItem="R8g-30-dJv" secondAttribute="leading" id="JOg-os-Tel"/>
+                        <constraint firstItem="KrG-Lk-HrF" firstAttribute="trailing" secondItem="R8g-30-dJv" secondAttribute="trailing" id="LJ3-lp-73o"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="R8g-30-dJv"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="2537.68115942029" y="837.72321428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sso-gT-xZX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="rDB-RK-tPk">
+                            <connections>
+                                <action selector="generateImageToSave:" destination="BYZ-38-t0r" id="QJM-ym-ssC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2402.898550724638" y="12.723214285714285"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Dc0-0g-ddE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gaP-Id-0CV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="FT4-I0-oVK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Lh-II-1Wi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rRu-Sy-dsa" kind="relationship" relationship="rootViewController" id="beo-Ni-C3M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3D-Fx-nmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755.07246376811599" y="160.71428571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IHY-JE-q6C">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pAm-pq-I47" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rVI-8N-9Z7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gaP-Id-0CV" kind="relationship" relationship="viewControllers" id="sQw-rO-Tsv"/>
+                        <segue destination="lO9-tj-YWF" kind="relationship" relationship="viewControllers" id="yJy-X4-4Zo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oxW-b3-krG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220" y="571"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ebz-Hy-SpW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lO9-tj-YWF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Unw-Ax-iIf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AuO-Po-EHy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BjI-3Z-ZVM" kind="relationship" relationship="rootViewController" id="4aJ-BF-BqL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewf-H2-R6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="827"/>
+        </scene>
+    </scenes>
+</document>
